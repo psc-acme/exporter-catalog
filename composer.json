@@ -1,0 +1,38 @@
+{
+    "name": "psc-acme/exporter-catalog",
+    "description": "Package exporter-catalog for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ExporterCatalog\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "symfony/yaml": "^7.0",
+        "symfony/cache": "^7.0",
+        "symfony/routing": "^7.0",
+        "league/commonmark": "^2.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan-symfony": "^1.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
